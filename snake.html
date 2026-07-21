@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X-O</title>
+    <title>Snake - MiniGames</title>
 
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="xo.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="snake.css">
 </head>
+
 <body>
 
-    <h1>⭕ X - O ❌</h1>
+    <div class="container">
 
-    <div id="status">Sıra: X</div>
+        <h1>🐍 Snake</h1>
 
-    <div id="board"></div>
+        <div class="info">
+            <span>Skor: <b id="score">0</b></span>
+            <span>En Yüksek: <b id="highscore">0</b></span>
+        </div>
 
-    <button id="restart">Yeniden Başlat</button>
+        <canvas id="game" width="400" height="400"></canvas>
 
-    <script src="xo.js"></script>
+        <button id="restart">Yeniden Başlat</button>
+
+        <br><br>
+
+        <a href="index.html">⬅ Ana Sayfa</a>
+
+    </div>
+
+    <script src="snake.js"></script>
 
 </body>
+
 </html>
