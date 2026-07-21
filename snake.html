@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake - MiniGames</title>
+    <title>Snake | MiniGames</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="snake.css">
 </head>
-
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <h1>🐍 Snake</h1>
+    <h1>🐍 Snake</h1>
 
-        <div class="info">
-            <span>Skor: <b id="score">0</b></span>
-            <span>En Yüksek: <b id="highscore">0</b></span>
-        </div>
-
-        <canvas id="game" width="400" height="400"></canvas>
-
-        <button id="restart">Yeniden Başlat</button>
-
-        <br><br>
-
-        <a href="index.html">⬅ Ana Sayfa</a>
-
+    <div class="stats">
+        <div>Skor: <span id="score">0</span></div>
+        <div>Rekor: <span id="highscore">0</span></div>
     </div>
 
-    <script src="snake.js"></script>
+    <canvas id="game" width="500" height="500"></canvas>
+
+    <div class="buttons">
+        <button id="restart">Yeniden Başlat</button>
+    </div>
+
+    <p class="controls">
+        WASD veya ← ↑ ↓ → ile oyna • Boşluk = Duraklat
+    </p>
+
+    <a href="index.html" class="back">⬅ Ana Sayfa</a>
+
+</div>
+
+<script src="snake.js"></script>
 
 </body>
-
 </html>
